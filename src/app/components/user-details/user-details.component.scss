@@ -1,0 +1,170 @@
+.left{
+  background-color: #648373ab;
+  text-align: center;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+.left-text{
+  text-transform: uppercase;
+  font-size: 30px;
+  padding-top: 20px;
+  background-color: rgb(84, 118, 121);
+  width: fit-content;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 500px;
+  padding: 5px 10px 5px 10px;
+
+}
+
+img{
+  border-radius: 50%;
+  padding: 30px 30px 30px 30px;
+  width: 100%;
+}
+img:hover{
+  filter:opacity(0.85);
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  font-family: myfont1;
+  color: white;
+  width: 100%
+}
+
+.right{
+  background: linear-gradient(#566b92, #6aa4ca);
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  div{
+    padding-top: 5px;
+  }
+}
+
+.icon-information{
+  padding-top: 20px;
+}
+
+.icon-information:hover{
+  transform: scale(130%);
+  transition: 1s;
+}
+a{
+  color: inherit;
+  color: wheat;
+}
+
+@media screen and (min-width: 600px){
+  .left-text{
+    font-size: 40px;
+  }
+  .right{
+    font-size: 40px;
+  }
+  .icon-information-container{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+
+
+
+@media screen and (min-width: 1000px){
+  // .img-container{
+  //   width: fit-content;
+  // }
+
+
+  .left-text{
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-top: 20px;
+    background-color: rgb(84, 118, 121);
+    width: fit-content;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 500px;
+    padding: 5px 10px 5px 10px;
+
+  }
+
+  .right{
+    width: 100%;
+  }
+
+  img{
+    border-radius: 50%;
+    padding: 30px 30px 30px 30px;
+    width: 100%;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: row;
+    font-family: myfont1;
+    color: white;
+    width: 100%
+  }
+
+  a{
+    color: inherit;
+    color: wheat;
+  }
+
+  .right{
+    background: linear-gradient(#566b92, #6aa4ca);
+    width: 60%;
+    text-align: center;
+  }
+
+  .left{
+    background-color: #648373ab;
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    width: 40%;
+
+  }
+  .name{
+    font-size: 50px;
+    margin-top: 40px;
+  }
+  .personal-information{
+    padding: 0px 50px 0px 50px;
+    font-size: 30px;
+  }
+  .personal-information-1{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 50px 0px 50px;
+    justify-content: space-between;
+  }
+  .personal-information-2{
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 60px;
+  }
+  .icon-information-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  i{
+    font-size: 50px;
+  }
+
+}
+

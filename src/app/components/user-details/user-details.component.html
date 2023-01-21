@@ -1,0 +1,38 @@
+<div class="container">
+  <section class="left">
+    <div class="left-text">{{githubDetails.login}}</div>
+    <div class="img-container"><img [src]="githubDetails.avatar_url" alt=""></div>
+    <div class="left-text">{{githubDetails.created_at | date:'EEE MMM dd yyy'}}</div>
+  </section>
+
+  <section class="right">
+    <div class="name">{{githubDetails.name}}</div>
+    <div class="personal-information personal-information-1">
+      <div *ngIf="githubDetails.location!=null;" class="text-icon"><i class="bi bi-geo-alt-fill"></i> {{githubDetails.location}}</div>
+      <div *ngIf="githubDetails.twitter_username!=null"><i class="bi bi-twitter"></i>@{{githubDetails.twitter_username}}</div>
+    </div>
+    <div class="personal-information personal-information-2">
+      <div *ngIf="githubDetails.blog!=''"><i class="fas fa-blog"></i><a [href]="githubDetails.blog">{{githubDetails.blog}}</a></div>
+    </div>
+    <div class="personal-information personal-information-3">
+      <div class="icon-information-container">
+        <div class="icon-information">
+          <div>REPOS </div>
+          <div><i class="fa-solid fa-code-branch"></i></div>
+          <div>{{githubDetails.public_repos}}</div>
+        </div>
+        <div class="icon-information">
+          <div>FOLLOWERS</div>
+          <div><i class="fa-sharp fa-solid fa-users"></i></div>
+          <div>{{githubDetails.followers}}</div>
+        </div>
+        <div class="icon-information">
+          <div>FOLLOWING</div>
+          <div><i class="fa-solid fa-user-group"></i></div>
+          <div>{{githubDetails.following}}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
