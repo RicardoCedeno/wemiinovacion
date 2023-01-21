@@ -1,27 +1,26 @@
-# Weminnovacion
+# 1 Weminnovacion
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.1.
 
-## Development server
+## 1.1 Proyecto
+Se trata de un sitio web responsive que muestra los datos de un usuario de github que es digitado.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 1.2 Softwares
+El sitio está construido usando el framweork angular, además se usó bootstrap y fontaweasome para los iconos.
 
-## Code scaffolding
+## 1.3 Diseño Responsive
+El sitio cuenta con tres modos: teléfono celular (<600px) , tablet (601px -999px) y computador(>1001px) para una mejor experiencia del usuario.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# 2 Clases, Componentes y servicios
 
-## Build
+## 2.1 Clases
+Se usó una clase que contiene los atributos del usuario de github: id, login, avatar_url, created_at, name, location, twitter_username, blog, public_repos, followers y following
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 2.2 Componentes
+La aplicación cuenta con dos componentes: Un componente padre que cuenta con la etiqueta input y un componente hijo donde se muestra la información del usuario buscado
 
-## Running unit tests
+## 2.3 Servicios
+Un servicio fue usado con el fin de obtener los datos de la url: https://api.github.com/users/{username} mediante un método get, para luego inyectar el servicio y usarlo en un componente mediante un subscribe.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 2.4 Alerts 
+Se usaron alertas para informar cuando el usuario ingresado no exista o no se ingrese ningún usuario.
