@@ -5,7 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## 1.1 Proyecto
 Se trata de un sitio web responsive que muestra los datos de un usuario de github que es digitado.
 
-## 1.2 Softwares
+## 1.2 Tecnologías
 El sitio está construido usando el framweork angular, además se usó bootstrap y fontaweasome para los iconos.
 
 ## 1.3 Diseño Responsive
