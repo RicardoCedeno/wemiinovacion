@@ -10,11 +10,13 @@
   <h1 class="title">Find GitHub User</h1>
   <div>{{searchedUsers}}</div>
   <div class="input-container">
-    <input type="text" name="username" placeholder="Username" [(ngModel)]="username">
-    <div class="icons">
-      <span><i class="fa-brands fa-github"></i></span>
-      <span><button (click)="getAUser()"><i class="fa-solid fa-magnifying-glass"></i></button></span>
-    </div>
+    <form action="">
+      <input type="text" name="username" placeholder="Username" [(ngModel)]="username">
+      <div class="icons">
+        <span><i class="fa-brands fa-github"></i></span>
+        <span><button (click)="getAUser()"><i class="fa-solid fa-magnifying-glass"></i></button></span>
+      </div>
+    </form>
   </div>
   <app-user-details [githubDetails]="userGit"></app-user-details>
 </body>
