@@ -31,7 +31,8 @@ img:hover{
   flex-direction: column;
   font-family: myfont1;
   color: white;
-  width: 100%
+  width: 100%;
+
 }
 
 .right{
@@ -114,7 +115,14 @@ a{
     flex-direction: row;
     font-family: myfont1;
     color: white;
-    width: 100%
+    width: 100%;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+
   }
 
   a{
@@ -126,6 +134,8 @@ a{
     background: linear-gradient(#566b92, #6aa4ca);
     width: 60%;
     text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 
   .left{
@@ -134,6 +144,8 @@ a{
     padding-bottom: 60px;
     padding-top: 60px;
     width: 40%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 
   }
   .name{
@@ -167,4 +179,3 @@ a{
   }
 
 }
-
